@@ -1,3 +1,2 @@
-The mapping.html goes in a folder.  The images zip files get combined into one "images" subfolder.
-
+Just copy to your computer or a website in order to view.
 Please help improve this repository by raising issues, or contact me with questions.
