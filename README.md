@@ -1,5 +1,5 @@
 <P>
-The purpose of this repository is to enable anyone with access to LIDAR data to be able to make orienteering maps using free open source software.  For more information about the sport of orienteering, visit https://landnavapp.com/orienteering.html
+The purpose of this repository (separate file viewable at https://landnavapp.com/mapping/mapping.html) is to enable anyone with access to LIDAR data to be able to make orienteering maps using free open source software.  For more information about the sport of orienteering, visit https://landnavapp.com/orienteering.html
 </P>
 
 <p>
