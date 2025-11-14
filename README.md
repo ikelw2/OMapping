@@ -7,5 +7,5 @@ The instruction uses https://www.openorienteering.org/apps/mapper/ for creating 
 </p>
 
 <p>
-This repository contains an HTML instruction page.  Just copy to your computer or a website in order to view.  Please help improve this repository by raising issues, or contact me with questions.
+This repository contains an HTML instruction page.  Just copy all the files to your computer or a website in order to view.  Please help improve this repository by raising issues, or contact me with questions.
 </p>
