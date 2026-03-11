@@ -7,7 +7,7 @@ The instruction uses https://www.openorienteering.org/apps/mapper/ for creating 
 </p>
 
 <p>
-This repository contains an HTML instruction page.  It can be accessed online at https://ikelw2.github.io/OMapping/
+This repository contains an HTML instruction page.  It can be accessed online at https://ikelw2.github.io/omapping/
 </p>
 <p>
   Alternatively, copy all the files to your computer in order to view.  Please help improve this repository by raising issues, or contact me with questions.
