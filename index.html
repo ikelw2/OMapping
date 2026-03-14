@@ -351,24 +351,24 @@
 	<pre>- DGM Mosaic: columns 3001, rows 3001 </pre>
 	<li>Click "<mark>Okay</mark>". Wait for the process to complete.</li>
 	<li>Single-click the new "Mosaic" file at the bottom of the left-hand Manager window.</li>
-	<p><img src="img2/Select_MOS.png" width="300" height="auto"></p>
+	<p><img src="img2/select_MOS.png" width="300" height="auto"></p>
 	<li>In the Object Properties window, change the <b>Name</b> to "<mark>Altitude</mark>".</li>
 	<li>Press Enter twice to '<mark>apply</mark>' the change.</li>
 	<li id="L24_2">Scroll to the bottom of the Object Properties window, at <mark>Colors</mark> and select the "<mark>...</mark>" button.</li>
-	<p><img src="img2/MOS_color.png" width="300" height="auto"></p>
+	<p><img src="img2/Mos_color.png" width="300" height="auto"></p>
 	<li>Click the color button and change it to the 11th option up from the bottom (<mark>green-yellow-brown</mark>).</li>
 	<li>Click "<mark>Count</mark>" button, and change it to <mark>15</mark>.</li>
 	<li>Click "<mark>Okay</mark>" to close the Colors window.</li>
-	<p><img src="img2/MOS_color_2.png" width="500" height="auto"></p>
+	<p><img src="img2/Mos_color_2.png" width="500" height="auto"></p>
 	<li>In the Object Properties window, click "<mark>Apply</mark>" to apply changes.</li>	
 	<p>NOTE: Although we could press the 'Save' button, all it would do is offer to save the current configuration into an external file for reloading. We will use a different function 'Save as Image' to export an image file for our map.</p>
 	<li>In the Manager window, right-click the "<b>Altitude</b>" file and select "<mark>Save as Image</mark>".</li>
 	<li>Label the image "<mark>Altitude</mark>".</li>
 	<li>Select your "Park" folder (not the geodata folder), and click "<mark>Save</mark>".</li>
-	<p><img src="img2/MOS_Image.png" width="500" height="auto"></p>
+	<p><img src="img2/Mos_Image.png" width="500" height="auto"></p>
 	<li>Ensure "<mark>Save Georeference</mark>" is checked. "Legend" can remain un-checked.</li>
 	<li>Click "<mark>Okay</mark>".</li>
-	<p><img src="img2/MOS_Image_2.png" width="400" height="auto"></p>
+	<p><img src="img2/Mos_Image_2.png" width="400" height="auto"></p>
 	<li>You should now have an Altitude image (PNG) and world file (PGW) in your Park folder.</li>
 	<p><img src="img2/after_Altitude.png" width="400" height="auto"></p>
 	</ol></section>
@@ -383,10 +383,10 @@
 	<li>Ensure "<mark>Mosaicking</mark>" is selected, and press "OK".</li>
 	<p><img src="img2/SAGA_Mos_2.png" width="300" height="auto"></p>
 	<li>In the Mosaicking window, click the "<mark>...</mark>" button to open the 'Grids' selection window.</li>
-	<li>Click the double "<mark><<</mark>" button to move all the files to the left-hand side.</li>
+	<li>Click the double "<mark>&lt;&lt;</mark>" button to move all the files to the left-hand side.</li>
 	<li>Select all the <mark>DOM1</mark> files this time, then click the single "<mark>></mark>" button to move only those files to the right.</li>
 	<li>Click "<mark>Okay</mark>".</li>
-	<p><img src="img2/Mos_Add_Grids_DOM.png" width="600" height="auto"></p>
+	<p><img src="img2/MOS_Add_Grids_DOM.png" width="600" height="auto"></p>
 	<li>Set <b>Cellsize</b> to <mark>1</mark>.</li>
 	<li>Set <b>Fit</b> to "<mark>cells</mark>".</li>
 	<p><img src="img2/MOS_Finish.png" width="500" height="auto"></p>
@@ -427,9 +427,9 @@
 	<li>Select "<mark>Grid Difference</mark>", and press "OK".</li>
 	<p><img src="img3/SAGA_Dif_2.png" width="500" height="auto"></p>
 	<li>In the Grid Difference window, in "<b>Grid System</b>" select the <mark>dimensions</mark> which both mosaics are under. In our example, we've selected "1; 3001x3001y; 502000x 5395000y".</li>
-	<li>Under "<b>> > Minuend</b>", select "<mark>Altitude</mark>".</li>
+	<li>Under "<b>&gt; &gt; Minuend</b>", select "<mark>Altitude</mark>".</li>
 	<li>Under "<b>> Subtrahend</b>", select "<mark>Treetops</mark>".</li>
-	<li>Under "<b>< < Difference</b>", select "<mark>create</mark>".</li>
+	<li>Under "<b>&lt; &lt; Difference</b>", select "<mark>create</mark>".</li>
 	<p><img src="img3/Grid_Dif.png" width="600" height="auto"></p>
 	<li>Click "Okay". Wait for the process to complete.</li>
 	<li>Click the new "<b>Difference</b>" file at the bottom of the left-hand Manager window.</li>
@@ -445,7 +445,7 @@
 	<li>Set <b>Maximum</b> to "<mark>1.8</mark>".</li>	
 	<p><img src="img3/Grid_Dif_Shading.png" width="300" height="auto"></p>
 	<li>Scroll to the bottom of the Object Properties window.</li>
-	<li>Set <b>Colors -> Type</b> to "<mark>Graduated Colors</mark>".</li>
+	<li>Set <b>Colors --&gt; Type</b> to "<mark>Graduated Colors</mark>".</li>
 	<li>Under <b>Colors</b> and select the "<mark>...</mark>" button.</li>
 	<li>Click the color button and change it to the 2nd option up from the bottom (<mark>yellow-green-blue</mark>).</li>
 	<li>Click "<mark>Count</mark>" button, and change it to <mark>11</mark>.</li>
@@ -478,8 +478,8 @@
 	<li>Select "<mark>Slope, Aspect, Curvature</mark>", and press "OK".</li>
 	<p><img src="img3/SAGA_Slope_2.png" width="400" height="auto"></p>
 	<li>In the Slope, Aspect, Curvature window, in "<b>Grid System</b>" select the <mark>dimensions</mark> which both mosaics are under. In our example, we've selected "1; 3001x3001y; 502000x 5395000y".</li>
-	<li>Under "<b>> > Elevation</b>", select "<mark>Vegetation_Height</mark>".</li>
-	<li>Under "<b>< < Slope</b>", select "<mark>create</mark>".</li>
+	<li>Under "<b>&gt; &gt; Elevation</b>", select "<mark>Vegetation_Height</mark>".</li>
+	<li>Under "<b>&lt; &lt; Slope</b>", select "<mark>create</mark>".</li>
 	<li>Click "Okay". Wait for the process to complete.</li>
 	<p><img src="img3/SAGA_Slope_3.png" width="500" height="auto"></p>
 	<li>Click the new "<b>Slope</b>" file at the bottom of the left-hand Manager window.</li>
@@ -487,7 +487,7 @@
 	<li>In the Object Properties window, change the <b>Name</b> to "<mark>Vegetation_Slope</mark>".</li>
 	<li>Press Enter twice to '<mark>apply</mark>' the change.</li>
 	<li>Scroll to the bottom of the Object Properties window.</li>
-	<li>Set <b>Colors -> Type</b> to "<mark>Graduated Colors</mark>".</li>
+	<li>Set <b>Colors --&gt; Type</b> to "<mark>Graduated Colors</mark>".</li>
 	<li>Under <b>Colors</b> and select the "<mark>...</mark>" button.</li>
 	<li>Click the color button and change it to the 2nd option up from the bottom (<mark>yellow-green-blue</mark>).</li>
 	<li>Click "<mark>Count</mark>" button, and change it to <mark>11</mark>.</li>
@@ -523,8 +523,8 @@
 	<li>Ensure "<mark>Contour Lines from Grid</mark>" is selected, and press "OK".</li>
 	<p><img src="img4/contour_2.png" width="300" height="auto"></p>
 	<li>In the Contour Lines from Grid window, in "<b>Grid System</b>" select the <mark>dimensions</mark> which the earlier mosaics are under. In our example, we've selected "1; 3001x3001y; 502000x 5395000y".</li>
-	<li>Under "<b>> > Grid</b>", select "<mark>Altitude</mark>".</li>
-	<li>Under "<b>< < Contour</b>", select "<mark>create</mark>".</li>
+	<li>Under "<b>&gt; &gt; Grid</b>", select "<mark>Altitude</mark>".</li>
+	<li>Under "<b>&lt; &lt; Contour</b>", select "<mark>create</mark>".</li>
 	<p>NOTE: Here the SAGA program will automatically select the 'Base Contour Value' and the 'Maximum Contour Value' for us. The values shown in the screenshot below only apply to my example area.</p>
 	<li>Under "<b>Contour Interval</b>", select "<mark>0.5</mark>".</li>
 	<p><img src="img4/contour_3.png" width="500" height="auto"></p>
@@ -549,9 +549,9 @@
 	<li>Ensure "<mark>[grid_filter] Simple Filter</mark>" is selected, and press "OK".</li>
 	<p><img src="img4/simple_2.png" width="400" height="auto"></p>
 	<li>In the Simple Filter window, in "<b>Grid System</b>" select the <mark>dimensions</mark> which the earlier mosaics are under. In our exaple, we've selected "1; 3001x3001y; 502000x 5395000y".</li>
-	<li>Under "<b>> > Grid</b>", select "<mark>Altitude</mark>".</li>
+	<li>Under "<b>&gt; &gt; Grid</b>", select "<mark>Altitude</mark>".</li>
 	<p>NOTE: There are two "Simple Filter" functions. If you accidentally ran the wrong function, named "[grids_tools] Simple Filter", it will not offer any options here because it is looking for a 'Grid Collection' instead of a 'Grid'. If this is the case, close the function and run the correct function, "[grid_filter] Simple Filter".</p>
-	<li>Under "<b>< Filtered Grid</b>", select "<mark>create</mark>".</li>
+	<li>Under "<b>&lt; Filtered Grid</b>", select "<mark>create</mark>".</li>
 	<li>Under "<b>Radius</b>", select "<mark>5</mark>".</li>
 	<p>NOTE: For less hilly areas, try 10 here instead of 5.</p>
 	<p><img src="img4/simple_3.png" width="400" height="auto"></li>
@@ -564,9 +564,9 @@
 	<li>In the "Search for" box type "<mark>simple</mark>" and press "Okay".</li>
 	<li>Again, select "<mark>[grid_filter] Simple Filter</mark>", and press "OK".</li>
 	<li>In the Simple Filter window, in "<b>Grid System</b>" select the <mark>dimensions</mark> which the earlier mosaics are under. In our exaple, we've selected "1; 3001x3001y; 502000x 5395000y".</li>
-	<li>Under "<b>> > Grid</b>", select the previously created smoothed file. In our case it was called "<mark>Altitude_Smoothed_5m</mark>".</li>
+	<li>Under "<b>&gt; &gt; Grid</b>", select the previously created smoothed file. In our case it was called "<mark>Altitude_Smoothed_5m</mark>".</li>
 	<p>NOTE: If it won't let you select anything for Grid, you may have run the wrong 'Simple Filter' function. Close the function and re-run the "[grid_filter] Simple Filter" function (step 14).</p>
-	<li>Under "<b>< Filtered Grid</b>", select "<mark>create</mark>".</li>
+	<li>Under "<b>&lt; Filtered Grid</b>", select "<mark>create</mark>".</li>
 	<li>Under "<b>Radius</b>", select "<mark>1</mark>" or "<mark>2</mark>".</li>
 	<p><img src="img4/simple_4.png" width="400" height="auto"></p>
 	<li>Click "<mark>Okay</mark>". Wait for the process to complete.</li>
@@ -582,8 +582,8 @@
 	<li>Ensure "<mark>Contour Lines from Grid</mark>" is selected, and press "OK".</li>
 	<p><img src="img4/contour_2.png" width="300" height="auto"></p>
 	<li>In the Contour Lines from Grid window, in "<b>Grid System</b>" select the <mark>dimensions</mark> which the earlier mosaics are under. In our example, we've selected "1; 3001x3001y; 502000x 5395000y".</li>
-	<li>Under "<b>> > Grid</b>", select "<mark>Altitude_Smoothed_5m_2m</mark>", or whatever you named it in step 20.</li>
-	<li>Under "<b>< < Contour</b>", select "<mark>create</mark>".</li>
+	<li>Under "<b>&gt; &gt; Grid</b>", select "<mark>Altitude_Smoothed_5m_2m</mark>", or whatever you named it in step 20.</li>
+	<li>Under "<b>&lt; &lt; Contour</b>", select "<mark>create</mark>".</li>
 	<p>NOTE: Here the SAGA program will automatically select the 'Base Contour Value' and the 'Maximum Contour Value' for us. The values shown in the screenshot below only apply to my example area.</p>
 	<li>Under "<b>Contour Interval</b>", enter "<mark>2.5</mark>" or whichever contour interval you want on your map.</li>
 	<p>NOTE: If you're using a value other than 2.5m, it may help to experiment with different radius values in the simple filter functions earlier in this section to see if they work better for your map.</p>
@@ -609,8 +609,8 @@
 	<li>Ensure "<mark>Slope, Aspect, Curvature</mark>" is selected, and press "OK".</li>
 	<p><img src="img4/Slope_Shade_2.png" width="400" height="auto"></p>
 	<li>In the Simple Filter window, in "<b>Grid System</b>" select the <mark>dimensions</mark> which the earlier mosaics are under. In our exaple, we've selected "1; 3001x3001y; 502000x 5395000y".</li>
-	<li>Under "<b>> > Elevation</b>", select "<mark>Altitude</mark>".</li>
-	<li>Under "<b>< < Slope</b>", select "<mark>create</mark>".</li>
+	<li>Under "<b>&gt; &gt; Elevation</b>", select "<mark>Altitude</mark>".</li>
+	<li>Under "<b>&lt; &lt; Slope</b>", select "<mark>create</mark>".</li>
 	<p><img src="img4/Slope_Shade_3.png" width="500" height="auto"></p>		
 	<li>Click "<mark>Okay</mark>". Wait for the process to complete.</li>
 	<li>Click the new "<b>Slope</b>" file at the bottom of the 'Grids' files in the left-hand Manager window.</li>
@@ -619,7 +619,7 @@
 	<li>Set <b>Exaggeration</b> to "<mark>150</mark>".</li>
 	<p><img src="img4/Slope_Shade_4.png" width="300" height="auto"></p>
 	<li>Scroll to the bottom of the Object Properties window.</li>
-	<li>Set <b>Colors -> Type</b> to "<mark> RGB Compsite</mark>".</li>
+	<li>Set <b>Colors --&gt; Type</b> to "<mark> RGB Compsite</mark>".</li>
 	<p>NOTE: It will automatically populate the values in the Range box; no changes required.</p>
 	<p><img src="img4/Slope_Shade_5.png" width="300" height="auto"></p>
 	<li>Click "<mark>Apply</mark>".</li>
@@ -630,8 +630,8 @@
 	<li>Check the "<mark>Save Georeference</mark>" box. "Legend" can remain un-checked.</li>
 	<li>Click "<mark>Okay</mark>".</li>
 	<li>Go to the bottom of the Object Properties window, to the <mark>Display</mark> section.</li>
-	<li>Change Colors --> <b>Type</b> from "RGB Composite" to "<mark>Shade</mark>".</li>
-	<li>Change Adjustment --> <b>Standard Deviation</b> to "<mark>5</mark>".</li>
+	<li>Change Colors --&gt; <b>Type</b> from "RGB Composite" to "<mark>Shade</mark>".</li>
+	<li>Change Adjustment --&gt; <b>Standard Deviation</b> to "<mark>5</mark>".</li>
 	<p>NOTE: It will automatically populate the values in the Range box to reflect the change; no adjustments are required to these numbers.</p>
 	<li>Change <b>Scaling</b> to "<mark>increasing geometrical intervals</mark>".</li>
 	<p><img src="img4/Slope_Shade_6.png" width="300" height="auto"></p>
@@ -673,7 +673,7 @@
 	<li>Select the base directory of your map (Park folder), and click "<mark>Save</mark>".</li>
 	<li>Check the "<mark>Save Georeference</mark>" box. "Legend" can remain un-checked.</li>
 	<li>Click "<mark>Okay</mark>" to save the image</li>
-	<li>Change the Object Properties -> Shading -> "<b>Azimuth</b>" to "<mark>45</mark>".</li>
+	<li>Change the Object Properties --&gt; Shading --&gt; "<b>Azimuth</b>" to "<mark>45</mark>".</li>
 	<li>Press Enter twice to '<mark>apply</mark>' the change.</li>
 	<li>In the Manager window, right-click the "<b>Altitude</b>" file and select "<mark>Save as Image</mark>".</li>
 	<li>Label the image "<mark>Hill_Shading_045</mark>", and click "Okay" to save the image.</li>
@@ -718,33 +718,33 @@
 	<li>Run OpenOrienteering Mapper.</li>
 	<li>Click "<mark>Create a new map</mark>".</li>
 	<li>Select "<mark>ISOM 2017-2_10000</mark>".</li>
-	<p><img src="img5/Raw_cont_01.png" width="300" height="auto"></p>
+	<p><img src="img5/raw_cont_01.png" width="300" height="auto"></p>
 	<li>Click "<mark>Create</mark>".</li>
 	<p>NOTE: The left-hand side of OpenOrienteering Mapper allows you to edit your map (it is grayed out until we add data). The right-hand side shows the "Symbol" window for adding objects to your map. Along the top is a toolbar that lets you select what action you want to do, adding, editing, rotating, cropping, etc. For additional help consult the online <a href="https://www.openorienteering.org/mapper-manual/pages/"  target="_blank" rel="noopener noreferrer">documentation</a> page.</p>
 	<p>NOTE: In OpenOrienteering Mapper, there are two different ways to load intermediate data files: (1) loading an image file for viewing/comparing with the map, and (2) importing a (certain type of) file allowing you to edit the symbols as you would an orienteering map. For this step we will 'import' the 0.5m raw contour shape file. More on this important distinction later.</p>
-	<li>Click "File --> <mark>Import</mark>".</li>
+	<li>Click "File --&gt; <mark>Import</mark>".</li>
 	<li>Select the "<mark>Contours_0.5m_Raw.shp</mark>" file in your Park folder.</li>
-	<p><img src="img5/Raw_cont_02.png" width="500" height="auto"></p>
+	<p><img src="img5/raw_cont_02.png" width="500" height="auto"></p>
 	<li>Click "Open". Wait for it to finish loading the file.</li>
 	<li>On the "Map Georeferencing" window, under "<b>Coordinate reference system</b>", select "<mark>UTM</mark>".</li>
 	<li>Check that the "<b>Status</b>" indicates "<b>Valid</b>". If there is an error with the coordinate reference system, you may need to re-process the LIDAR correctly.</li>
-	<p><img src="img5/Raw_cont_03.png" width="500" height="auto"></p>
+	<p><img src="img5/raw_cont_03.png" width="500" height="auto"></p>
 	<li>Click "OK". Wait for it to finish thinking.</li>
-	<p><img src="img5/Raw_cont_04.png" width="300" height="auto"></p>
+	<p><img src="img5/raw_cont_04.png" width="300" height="auto"></p>
 	<li>On the "Assign new symbols" window, under the "<b>2 Line</b>", leave it reading "<mark>- none -</mark>", and click "OK".</li>
-	<p><img src="img5/Raw_cont_05.png" width="300" height="auto"></p>
+	<p><img src="img5/raw_cont_05.png" width="300" height="auto"></p>
 	<li>You should now see before you a bunch of purple contour lines. At the bottom of the symbol window, double-click on the purple <b>2 Line</b> symbol.</li>
-	<p><img src="img5/Raw_cont_06.jpg" width="400" height="auto"></p>
+	<p><img src="img5/raw_cont_06.jpg" width="400" height="auto"></p>
 	<li>In the "Symbol settings" window, under the "<b>Line settings</b> tab, change the "<b>Line width</b> from "0.10 mm" to "<mark>0.01 mm</mark>".</li>
-	<p><img src="img5/Raw_cont_07.png" width="500" height="auto"></p>
+	<p><img src="img5/raw_cont_07.png" width="500" height="auto"></p>
 	<li>Click "OK".</li>
 	<li>The purple lines may appear to have disappeared, but they're still there. They're just very small, you have to zoom in to see them.</li>
-	<li>Select File --> "<mark>Save</mark>".</li>
+	<li>Select File --&gt; "<mark>Save</mark>".</li>
 	<li>Navigate to your Park folder save the file as "Contours_0.5m_Raw.omap"</li>
-	<p><img src="img5/Raw_cont_08.png" width="500" height="auto"></p>
+	<p><img src="img5/raw_cont_08.png" width="500" height="auto"></p>
 	<li>Close the OpenOrienteering Mapper window by clicking the X at the top right of the window.</li>
 	<li>You should now have an OpenOrienteering Mapper file in your Park folder called "Contours_0.5m_Raw.omap".</li>
-	<p><img src="img5/Raw_cont_09.png" width="400" height="auto"></p>
+	<p><img src="img5/raw_cont_09.png" width="400" height="auto"></p>
 	</ol></section>
 	
 
@@ -776,31 +776,31 @@
 	<h2>3.2 Import OSM File(s)<div class="rfBtn" style="width: min-content"><a href="#TOC0"><img src="img1/returnToMenu.png" width="32px" height="auto"></a></div></h2>
 	<ol>
 	<p>We will begin by importing OpenStreetMap (OSM) data into our map.</p>
-	<li>Click "File --> <mark>Import</mark>".</li>
+	<li>Click "File --&gt; <mark>Import</mark>".</li>
 	<li>Select the "<mark>OSM</mark>" file in your Park folder. In our example, it was called "map (1).osm"</li>
 	<p><img src="img5/park_osm_2.png" width="500" height="auto"></p>
 	<li>Click "Open".</li>
 	<li>On the "Map Georeferencing" window, under "<b>Coordinate reference system</b>", select "<mark>UTM</mark>".</li>
 	<p>NOTE: Changing the coordinate reference system of your map is something you should only do before you start mapping and importing data. This is because the coordinate reference system is critical to the location data of the map, and if you decide to change it up later on, it's probably going to make it difficult to properly import data afterwards, or stuff that is already on your map may be dislocated elsewhere. When I have selected "- local -" before, it has caused problems when I try to load templates, and they don't appear where they should be. For these reasons, I recommend always picking the simplest option, "UTM".</p>
 	<li>Check that the "<b>Status</b>" indicates "<b>Valid</b>".</li>
-	<p><img src="img5/Raw_cont_03.png" width="500" height="auto"></p>
+	<p><img src="img5/raw_cont_03.png" width="500" height="auto"></p>
 	<li>Click "OK".</li>
 	<li>On the "Assign new symbols" window, click "<mark>OK</mark>".</li>
 	<p><img src="img5/assign_osm.png" width="300" height="auto"></p>
 	<li>We should now see some vectorized OSM data on our map.</li>
-	<p><img src="img5/osm_done.jpg" width="500" height="auto"></p>
-	<li>Select "File --> <mark>Save</mark>" and save the map with the park name in the 'Park' folder. In our case we will save this map file as "Park" and it has an OMAP file extension.</li>
+	<p><img src="img5/OSM_done.jpg" width="500" height="auto"></p>
+	<li>Select "File --&gt; <mark>Save</mark>" and save the map with the park name in the 'Park' folder. In our case we will save this map file as "Park" and it has an OMAP file extension.</li>
 	<p>NOTE: If you only have one OSM file, that concludes this section. If you have additional OSM files to download and patch together, or decided to add a new section of land to your pre-existing map and have a new OSM file you want to import, proceed with the below steps.</p>
 	<li>Import the next OSM file.</li>
 	<li>Examine where the "split" line was located at on the map screen.</li>
-	<p>NOTE: If you need to reference UTM coordinates while scanning the map, select "<b>View --> Display coordinates as… --> </b><mark>UTM coordinates</mark>". The coordinates are visible in the bottom-right hand corner of the map as you move the mouse.</p>
+	<p>NOTE: If you need to reference UTM coordinates while scanning the map, select "<b>View --&gt; Display coordinates as… --&gt; </b><mark>UTM coordinates</mark>". The coordinates are visible in the bottom-right hand corner of the map as you move the mouse.</p>
 	<p><img src="img5/map_coords.png" width="500" height="auto"></p>
 	<li>From one end of the split line, working to the other end, select any two objects of the same type that were split (hold shift while selecting).</li>
 	<li>Press '<mark>C</mark>' to connect two linear features, or '<mark>U</mark>' (union) to join two area features.</li>
 	<p>NOTE: If the two features are not the same type, they are not joinable. To change an object from one type to another, select the object, then select the type that you wish to change it to, then select the "Switch Symbol" function (also listed in the Tool menu).</p>
 	<p>NOTE: If you have already curved linear features, you may prefer to curve the additional lines before you connect them. To curve lines, select a linear feature and press 'N'. See <a href="#TOC0">this XXX</a> section for tips concerning the curve function. /// (Curving lines may or may not help conserve memory; you'll need to experiment what works.)</p>
 	<li>Continue to connect linear and join area features until you reach the end of the split line.</li>
-	<li>Select "File --> <mark>Save</mark>" to save the map in the park folder.</li>
+	<li>Select "File --&gt; <mark>Save</mark>" to save the map in the park folder.</li>
 	<li>At this point, repeat the last five steps until you have imported all the OSM files.</li>
 	</ol></section>
 	
@@ -816,7 +816,7 @@
 		<li><b>Purple</b> - for purple lines, dots, areas.</li>
 		<li><b>Grid</b> - for magnetic north lines and other special objects like a bar scale.</li>
 		</ul><br>
-	<li>Click the menu option "Map --> <mark>Add new part…</mark>".</li>
+	<li>Click the menu option "Map --&gt; <mark>Add new part…</mark>".</li>
 	<p><img src="img6/CreateMapPart.png" width="400" height="auto"></p>
 	<li>Enter "<mark>Topos</mark>" and press "OK".</li>
 	<p><img src="img6/add_Topos_part.png" width="200" height="auto"></p>
@@ -826,8 +826,8 @@
 	<p>NOTE: If the part we just created is selected, we won't be able to select or edit anything because the objects are in a different part.</p>
 	<li>Change the map part from whatever it is to "<mark>default part</mark>", which will allow us to select and move/edit the objects already on the map.</li>
 	<p><img src="img6/part_defaultpart_selected.png" width="300" height="auto"></p>
-	<p>NOTE: You can add new parts at any time later in the mapping process, even temporarily in order to move a large quantity of objects around. When you're done with moving the objects and you want to remove the part, select the part, then select "Map --> Remove current part". You can even merge different parts together.</p>
-	<li>Select "File --> <mark>Save</mark>" to save the map in the park folder.</li>
+	<p>NOTE: You can add new parts at any time later in the mapping process, even temporarily in order to move a large quantity of objects around. When you're done with moving the objects and you want to remove the part, select the part, then select "Map --&gt; Remove current part". You can even merge different parts together.</p>
+	<li>Select "File --&gt; <mark>Save</mark>" to save the map in the park folder.</li>
 	</ol></section>
 	
 	
@@ -839,13 +839,13 @@
 	<li>Click the 'Edit Objects' (<mark>arrow</mark>) button at the top left.</li>
 	<li>Select a <mark>purple line</mark>.</li>
 	<p><img src="img6/select_purple_line.png" width="400" height="auto"></p>
-	<li>Select "Edit --> <mark>Select all objects with selected symbols</mark>".</li>
-	<li>Select "Map --> Move selected objects to --> <mark>Purple</mark>".</li>
+	<li>Select "Edit --&gt; <mark>Select all objects with selected symbols</mark>".</li>
+	<li>Select "Map --&gt; Move selected objects to --&gt; <mark>Purple</mark>".</li>
 	<p><img src="img6/move_purple_lines.png" width="400" height="auto"></p>
 	<li>Repeat the same process for all <mark>purple dots</mark>, and <mark>purple areas</mark>.</li>
 	<li>Change the map part from whatever it is to "<mark>default part</mark>".</li>
 	<p>All the purple stuff should now be in the Purple part, therefore we don't need to worry about accidentally selecting the purple stuff when we want to edit other stuff.</p>
-	<li>Select "File --> <mark>Save</mark>" to save the map in the park folder.</li>
+	<li>Select "File --&gt; <mark>Save</mark>" to save the map in the park folder.</li>
 	</ol></section>	
 	
 	
@@ -856,18 +856,18 @@
 	<p>NOTE: In OpenOrienteering Mapper, there are two different ways to load intermediate data files: (1) loading an image file for viewing/comparing with the map, and (2) importing a (certain type of) file allowing you to edit the symbols as you would an orienteering map. For this step we will 'import' the 2.5m smoothed contour shape file, so the lines remain editable.</p>
 	<li>Change the map part from whatever it is to "<mark>Topos</mark>".</li>
 	<p><img src="img6/select_topos_part.png" width="200" height="auto"></p>
-	<li>Click "File --> <mark>Import</mark>".</li>
+	<li>Click "File --&gt; <mark>Import</mark>".</li>
 	<li>Select the "<mark>Contours_2.5m_Smooth.shp</mark>" file in your Park folder.</li>
 	<p><img src="img6/Select_Smooth_Contours.png" width="500" height="auto"></p>
 	<li>Click "Open".</li>
-	<li>On the "Assign new symbols" window, change the "Replacement --> <b>2 Line</b>" to "<mark>101 Contour</mark>", and click "OK".</li>
+	<li>On the "Assign new symbols" window, change the "Replacement --&gt; <b>2 Line</b>" to "<mark>101 Contour</mark>", and click "OK".</li>
 	<p><img src="img6/Select_101_Contour.png" width="300" height="auto"></p>
 	<li>Click "<mark>No</mark> to the prompt "The cross reference table has been modified. Do you want to save your changes?"</li>
 	<p><img src="img6/do_not_save_changes.png" width="300" height="auto"></p>
 	<li>Our map now has some soft contours, and looks wonderful!</li>
 	<li>Change the map part from whatever it is to "<mark>default part</mark>".</li>
-	<p>NOTE: When in the 'default part', you should not be able to select any contour lines, because they should be in the 'Topos' map part. If contour lines are present in the 'default part' you may have skipped the first step in this section. You can move all the topos from default part to Topos part by selecting one, then selecting "edit --> Select all objects with selected symbols" then selecting "Map --> Move selected objects to --> Topos".</p>
-	<li>Select "File --> <mark>Save</mark>" to save the map in the park folder.</li>
+	<p>NOTE: When in the 'default part', you should not be able to select any contour lines, because they should be in the 'Topos' map part. If contour lines are present in the 'default part' you may have skipped the first step in this section. You can move all the topos from default part to Topos part by selecting one, then selecting "edit --&gt; Select all objects with selected symbols" then selecting "Map --&gt; Move selected objects to --&gt; Topos".</p>
+	<li>Select "File --&gt; <mark>Save</mark>" to save the map in the park folder.</li>
 	</ol></section>
 		
 	
@@ -878,7 +878,7 @@
 	<ol>
 	<p>In this step we will load the remaining intermediate image files we created in the previous section. We will load them as 'templates' which means we can hide them, change their transparency, change their z-order (appearance order), but we will not be able to edit the images themselves in OpenOrienteering mapper.</p>
 	<p>It's important to note that when we save the OpenOrienteering map, it will not save all the images into the map file, but just include <i>references</i> to the image files. For this reason I recommend placing all the templates/images <b>in the same folder (or subfolder) as the map file itself</b>. In our example, our OpenOrienteering map file is in the Park folder, and that's also where all the images/templates are. When you prepare to conduct field checking and go to copy some of the map files to your mobile device, OpenOrienteering mapper on your mobile device will know where to find them, because they're all in the same folder.</p>
-	<li>Select "Templates --> <mark>Template setup window</mark>".</li>
+	<li>Select "Templates --&gt; <mark>Template setup window</mark>".</li>
 	<p><img src="img7/template_setup_window.png" width="300" height="auto"></p>
 	<li>Click the "Add template… (<mark>green plus</mark>) button.</li>
 	<li>Click "<mark>Open…</mark>" on the bottom left of the Template setup window.</li>
@@ -932,7 +932,7 @@
 	<p><img src="img7/purple_for_field_checking.png" width="500" height="auto"></p>
 	<li>Uncheck the 'Contours_0.5m_Raw.png" check-box.</li>
 	<p><img src="img7/unchecked_boxes.png" width="300" height="auto"></p>
-	<li>Select "File --> <mark>Save</mark>" to save the map in the park folder.</li>
+	<li>Select "File --&gt; <mark>Save</mark>" to save the map in the park folder.</li>
 	</ol></section>	
 	
 		
@@ -958,7 +958,7 @@
 	<p>The lesson here is to first focus on <b>easy fixes</b> like putting things on the map, rather than spending a lot of time and energy making miniscule adjustments to the map which might have no bearing on the end result.</p>
 	<p>If you still feel as if the orthoimagery is inaccuratly geolocated, realize that the LIDAR (i.e., from other templates) is probably more accurate than the orthoimagery. So use <i>LIDAR-based templates</i> to update geolocational info for your objects first, and orthoimagery second.</p>
 	<li>Select the orthophotography image in the Template Setup Window and click the "Remove" (<mark>red minus</mark>) button to remove the template from the map.</li>
-	<li>Select "File --> <mark>Save</mark>" to save the map in the park folder.</li>
+	<li>Select "File --&gt; <mark>Save</mark>" to save the map in the park folder.</li>
 	</ol></section>
 	
 	
@@ -979,7 +979,7 @@
 	<li>Click the "2 Line" (<mark>purple line</mark>) symbol.</li>
 	<li>Click the "Draw Rectangle" (<mark>square</mark>) button.</li>
 	<li>Make a rectangle which approximately surrounds the OSM map area on your map, by left-clicking at the top-left and top-right, and right-clicking at the bottom-left of the area.</li>
-	<li>Select "<b>View --> Display coordinates as… --> </b><mark>UTM coordinates</mark>".
+	<li>Select "<b>View --&gt; Display coordinates as… --&gt; </b><mark>UTM coordinates</mark>".
 	<li>Select the "Edit Objects" (<mark>arrow</mark>) tool.</li>
 	<li>Zoom in on each corner.</li>
 	<li>Using the mouse and looking at the coordinates at the bottom-right of the window as you move the mouse, move each boundary until they match the range we downloaded for OSM data. In this example, the bottom-right corner should be at UTM coordinate '504780, 5395678', which almost matches the OSM data boundary.</li>
@@ -1027,7 +1027,7 @@
 	<li>Click the Forest button (<mark>symbol 405</mark>).</li>
 	<li>Click the "<mark>Switch symbol</mark>" tool so the purple area switches into a white area.</li>
 	<li>Deselect all, and switch to the "default part" of the map.</li>
-	<li>Select "File --> <mark>Save</mark>" to save the map in the park folder.</li>
+	<li>Select "File --&gt; <mark>Save</mark>" to save the map in the park folder.</li>
 	<p>Our map now looks like this: the templates are hidden around the exterior of the OSM data (thanks to a forest area masking those areas), and we've cropped (removed) the contours that were in the 'Topos' part.</p>
 	<p><img src="img8/crop_16.jpg" width="500" height="auto"></p>	
 	</ol></section>
@@ -1068,11 +1068,11 @@
 	<p><img src="img9/ok_tri.png" width="200" height="auto"></p>
 	<li><mark>Left-click and drag</mark> to select both the 602 registration mark object, and the triangle area 301 Uncrossable body of water.</li>
 	<p><img src="img9/select_all.png" width="300" height="auto"></p>
-	<li>Select "Tools --> <mark>Duplicate</mark>".</li>
+	<li>Select "Tools --&gt; <mark>Duplicate</mark>".</li>
 	<p>NOTE: The duplicate tool copies objects and keeps the location the same.</p>
-	<li>Select "Map --> <mark>Move selected objects to" and select "<mark>Purple</mark>".</li>
+	<li>Select "Map --&gt; <mark>Move selected objects to" and select "<mark>Purple</mark>".</li>
 	<li>Repeat the last three steps for each of your map parts. In our example, for map parts 'Purple', 'Vegetation' and 'Topos'.</li>
-	<li>Select "File --> <mark>Save</mark>" to save the map in the park folder.</li>
+	<li>Select "File --&gt; <mark>Save</mark>" to save the map in the park folder.</li>
 	<p id="movepurple">Having these reference points will allow us to move entire sections of the map out of view, on a temporary basis. As an example, we will (temporarily) move everything Purple to the left of the map in the next few steps</p>
 	<li>Change the map part from Grid to "<mark>Purple</mark>".</li>
 	<li>Press CTRL+A to select all objects (in Purple part).</li>
@@ -1084,7 +1084,7 @@
 	<p>NOTE: You can be extremely accurate when moving these parts by selecting all the symbols you want to move, then zooming in as far as you can on the left/right/top/botton edge of the registration point, and slowly moving the selection until the corresponding edge lines up perfectly with the edge on the 'Grid' part.</p>
 	<p>Using this technique we could make several changes to a map, without having to move the purple objects back before each save, and without having to re-import symbols a second time from OpenStreetMap. Although, we would want to move the purple stuff back to its correct placement before importing more OSM data, so patching together the two sides is easier. Also, every once in a while the OpenStreetMap data is updated, and you may want to re-load OSM data to see if any changes have been made since your last version.</p>
 	<li>Press CTRL+Z or the 'undo' (yellow left arrow) button, until the purple objects you just selected return to their previous location.</li>
-	<p>NOTE: If you make serious changes and you are not sure how to proceed, you can always close without saving, and re-open the last saved file. Using the "Map --> Rotate map" menu option cannot be undone, therefore always save the file before you rotate the map. 
+	<p>NOTE: If you make serious changes and you are not sure how to proceed, you can always close without saving, and re-open the last saved file. Using the "Map --&gt; Rotate map" menu option cannot be undone, therefore always save the file before you rotate the map. 
 	<p>Because of these and other issues, you may want to consider using a version control system like github to standardize updates to your map. <mark><b>If you do not use github, the best practice for mapping is consistently using a file-naming convention which includes the date of update, and keeping your files and folders well-organized. At the very least, because the relevant data in your map is now all in a single file, make a back-up copy every now and then!</b></mark></p>
 	</ol></section>
 
@@ -1102,10 +1102,10 @@
 	<p><img src="img9/hide_purp_1.jpg" width="500" height="auto"></p>
 	<li>Scan the map for any purple lines which <b><i>do not</i></b> overlie a road or trail. These ones might be worth keeping.</li>
 	<p><img src="img9/hide_purp_2.jpg" width="300" height="auto"></p>
-	<li>One by one, select those purple lines, cut them at each end if necessary (using the mouse menu --> scissors tool) where they no longer override a road or trail.</li>
+	<li>One by one, select those purple lines, cut them at each end if necessary (using the mouse menu --&gt; scissors tool) where they no longer override a road or trail.</li>
 	<p><img src="img9/hide_purp_3.jpg" width="300" height="auto"></p>
 	<li>Press '<mark>D</mark>' to duplicate each part.</li>
-	<li>While each part is selected, click "Map --> Move selected objects to --> '<mark>default part</mark>'.</li>
+	<li>While each part is selected, click "Map --&gt; Move selected objects to --&gt; '<mark>default part</mark>'.</li>
 	<li>Move the remaining purple stuff (in the purple part) off to the side, as described in <a href="#movepurple">this section</a>. It will be easier to edit the rest of the map without all the purple stuff present, and by moving it rather than deleting it, we still have access to it if we ever wanted to reference it later on.</li>	
 	<p><img src="img9/hide_purp_4.jpg" width="600" height="auto"></p>
 	<li>We're left with only a few purple lines in the default part, which we will need to field check.</li>
@@ -1234,7 +1234,7 @@
 	<p>NOTE: OpenOrienteering Mapper requires maps and templates are located in a subfolder in the OpenOrienteering Mapper app folder, which on my device is located at "Android\data\org.openorienteering.mapper\files". The only way I was able to copy the files was through USB cable. After you plug in your device, you may need to adjust your mobile device's "USB Preferences" to enable "file transfer".</p>
 	<p>Ideally, all your templates (excepting orthophotography) were loaded from the 'park' folder, which means they were in the same folder as the map itself. If they were in other separate folders, when you go to open them on your mobile device they may not be found. You'll get an error message and won't be able to see that template, but otherwise the map should open fine.</p>
 	<p>Some people use an external GPS device when mapping for increased accuracy while mapping. One mapper reports success using the Ardusimple "RTK Portable Bluetooth Kit" interfacing directly with OpenOrienteering Mapper. More information on this device can be found at <a href="https://www.ardusimple.de/product/simplertk2blite-bt-case-kit/">RTK Portable Bluetooth Kit</a>. This device is especially appealing to me because it is relatively cheap at a few hundred Euro, supports bluetooth and USB, and also supports NTRIP for corrections, which is an exciting add-on technology allowing even more accurate measurements, depending upon your access to NTRIP data.</p>
-	<p>My limited experience using a low-end $100 device, is that the external GPS provides additional peace of mind, but is not vastly superior to my phone's built-in GPS system. I have a Garmin Glo with the 'Bluetooth GNSS' android app installed on my phone, and I have to enable the phone's "developer options" and select "Developer options --> Select mock location app --> Bluetooth GNSS" for it to work. I am currently tempted to buy a more expensive external GPS but will hold off until it's cheaper. Some newer mobile devices support multi-frequencies for GNSS, meaning they can receive and process GPS, Galileo, GLONASS and Beidu signals, theoretically increasing accuracy. This is a simplified explanation so it may be incorrect.</p>
+	<p>My limited experience using a low-end $100 device, is that the external GPS provides additional peace of mind, but is not vastly superior to my phone's built-in GPS system. I have a Garmin Glo with the 'Bluetooth GNSS' android app installed on my phone, and I have to enable the phone's "developer options" and select "Developer options --&gt; Select mock location app --&gt; Bluetooth GNSS" for it to work. I am currently tempted to buy a more expensive external GPS but will hold off until it's cheaper. Some newer mobile devices support multi-frequencies for GNSS, meaning they can receive and process GPS, Galileo, GLONASS and Beidu signals, theoretically increasing accuracy. This is a simplified explanation so it may be incorrect.</p>
 	<li>Go into the field and verify certain things are where they are.</li>
 	<p>NOTE: When verifying/updating locations of objects and features on your map, try to incorporate <i>more</i> than just the GPS location for it. For instance, if a particular object i.e., a cairn (symbol 526) is between two small knolls (symbol 109), turn on "record my tracks" on the OpenOrienteering Mobile app and walk around the two knolls, and compare that GPX tracks to where the objects appear on your map. If the tracks are further away for whatever reason, maybe the map is more accurate in this instance than the GPX tracks. Or maybe both the cairn and the two small knolls should be shifted slightly in one direction. In other words, try to consider multiple factors before relying solely upon the GPS location for placement of an object, because GPS may not be the most accurate in all circumstances. An alternative to using other objects, is to visit the particular object on two separate occasions, to see if your GPS indicates a slightly different location the second time. If this happens, you may consider placing the object in between those two points - take an average of where the GPS said it was at on two different occasions.</p>
 	<li>If you come across unmapped trails, it may help to walk the trail with your mobile device (assuming you have decent GPS accuracy) and view your GPX tracks later on. When you enable the "record my tracks" option, it will save the tracks to a GPX file in the folder with your map in it, which you can load as a template when you return home. A similar tactic can be used for those who have a GPS-enabled watch like Garmin.</li>
@@ -1304,7 +1304,7 @@
 	<h2>4.1 Prepare Event Copy<div class="rfBtn" style="width: min-content"><a href="#TOC0"><img src="img1/returnToMenu.png" width="32px" height="auto"></a></div></h2>
 	<ol>
 	<li>Copy map and rename event_map, so we know we are only making edits for the purpose of printing and running an event.</li>
-	<li>Rotate the map to match the current magnetic declination of the area. (you may need to look up the declination on another website). If you go to "Map --> Georeferencing" there may already be a minor rotation applied to your map. Ordinarily to rotate the map, use "Map --> Rotate Map". Both methods can be used to apply a rotation to your map, I believe.</li>
+	<li>Rotate the map to match the current magnetic declination of the area. (you may need to look up the declination on another website). If you go to "Map --&gt; Georeferencing" there may already be a minor rotation applied to your map. Ordinarily to rotate the map, use "Map --&gt; Rotate Map". Both methods can be used to apply a rotation to your map, I believe.</li>
 	<p>NOTE: The reason why we only rotate the map when we are about to export a map for an event, is because rotating the map is hard to undo and it may pose problems if we try to make drastic changes to our map later on, such as expanding the map in a particular direction. When we go to import the OSM or LIDAR data, the newly imported data has not yet been rotated, so we'll have to rotate it once in an intermediate file before we import it - it is possibly much more complex to save a map that's been rotated, so we will only rotate our map right before we intend to use it for an event, and maintain an un-rotated map as our main map to edit.</p>
 	<li>add magnetic lines to the map by adding large square area (symbol 601.2 or 601.4).</li>
 	<li>add scale object, north arrow(s), and other markings as necessary.</li>
