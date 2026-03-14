@@ -1,21 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" charset="utf-8" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="color-scheme" content="light dark">
+	
+	<!-- define keywords for search engines -->
+	<meta name="keywords" content="orienteering, mapping, mapper, lidar">
+
+    <!-- define author of this page -->
+	<meta name="author" content="Michael W">
+
+	<!-- define description of this page -->
+	<meta name="description" content="Guide on how to create an orienteering map from LIDAR data">
+
+    <!-- set page automatic refresh rate of once per day, doesn't affect loading of images -->
+    <meta http-equiv="refresh" content="86400">
+
+	<title>Steps to Create an Orienteering Map With LIDAR</title>
+	<link rel="icon" type="image/png" href="https://www.landnavapp.com/docs/Images/icon_blank.png">
+
 	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
 	<style>
 		:root{
-			--backgroundcolor: rgb(229, 242, 229); // only thing not white
+			--backgroundcolor: rgb(229, 242, 229); /* only thing not white  */
 			--textcolor: black;
 			--linkcolor: black;
 			--precolor: white;
 			
-			--backgrounddark: black; //#121212; //black; 
-			--textdark: white; //#FFFFFF; //white; 
-			--linkdark: white; //#FFFFFF; //white;
-			--predark: gray; //white;
+			--backgrounddark: black; /*#121212; /*black;  */
+			--textdark: white; /*#FFFFFF; /*white;  */
+			--linkdark: white; /*#FFFFFF; /*white; */
+			--predark: gray; /*white; */
 			
 			font-family: Arial, sans-serif;
 			margin-top: 50px;
@@ -24,10 +40,10 @@
 			margin-left: 5%;
 		}
 		.night{
-			--backgroundcolor: black; //#121212; //black; //var(--backgrounddark);
-			--textcolor: white; //var(--textdark);
-			--linkcolor: white; //var(--linkdark);
-			--precolor: gray; //var(--predark);
+			--backgroundcolor: black; /*#121212; /*black; /*var(--backgrounddark); */
+			--textcolor: white; /*var(--textdark); */
+			--linkcolor: white; /*var(--linkdark); */
+			--precolor: gray; /*var(--predark); */
 		}
 		/*.day{
 			--backgroundcolor: rgb(229, 242, 229);
@@ -35,7 +51,11 @@
 			--linkcolor: var(--linkcolor);
 			--precolor: var(--precolor);
 		}*/
-		@charset "UTF-8";
+		/* @charset "UTF-8"; */
+		/* not sure what the above line was meant to do */
+		.center {
+			text-align: center;
+		}
 		h2 {
 			margin-top: 6em ;
 			margin-bottom: 2em ;
@@ -57,8 +77,8 @@
 		}
 		body {
 			background: var(--backgroundcolor);
-			background-color: var(--backgroundcolor); //rgb(229, 242, 229);
-			color: var(--textcolor, black); //#666);
+			background-color: var(--backgroundcolor); /*rgb(229, 242, 229); */
+			color: var(--textcolor, black); /*#666); */
 			/*font-family: Arial, sans-serif;
 			margin-top: 50px;
 			margin-bottom: 30px;
@@ -66,8 +86,8 @@
 			margin-left: 5%;*/
 		}
 		.dark-mode {
-			background-color: #121212; //black; //#121212;
-			//color: #EEEEEE; //white; //#777777;
+			background-color: #121212; /*black; /*#121212; */
+			/*color: #EEEEEE; /*white; /*#777777; */
 			filter: brightness(80%) grayscale(30%);
 		}
 		a:link, a:visited {
@@ -93,31 +113,28 @@
 			padding: 2px 10px !important;
 		}
 	</style>
-	<title>Steps to Create an Orienteering Map With LIDAR</title>
-	<link rel="icon" type="image/png" href="https://www.landnavapp.com/docs/Images/icon_blank.png">
 </head>
 <body>
 	
 	<section>
-		<center>
-		<h1 align="center">How To Create An Orienteering Map</h1>
-		<table><tr><td align="center">Updated 2025-05-03</td></tr>
-		<tr><td> &nbsp </td></tr>
-		<tr><td align="center"><i>Press CTRL+F5 to refresh all content on this page for the latest updates</i></td></tr>
-		<tr><td align="center"><i>For mobile devices, enabling 'desktop site' may help fix white text problem</i></td></tr>
+		<div class="center">
+		<h1>How To Create An Orienteering Map</h1>
+		<table><tr><td>Updated 2025-05-03</td></tr>
+		<tr><td> &nbsp; </td></tr>
+		<tr><td><i>For mobile devices, enabling 'desktop site' may help fix white text problem</i></td></tr>
 		</table>
-		</center>
+		</div>
 	
 		<br><br>
-		<div id="toc_container"> 
+		<div> 
 			<b>Font-size & Dark-mode:</b>
 			<span class="singleLine">
 			<div id="firstline"></div>
-			<div id="textZoom" class="slider"><input type="range" min="4" max="40" value="12" id="font-size-slider" step="1" />&nbsp;&nbsp;<button id="darkModeButton">&#9680;</button></div>
+			<div id="textZoom" class="slider"><input type="range" min="4" max="40" value="12" id="font-size-slider" step="1">&nbsp;&nbsp;<button id="darkModeButton">&#9680;</button></div>
 			</span>
 			<br><b>Google Translate:</b>
 			<div id="google_translate_element"></div>
-			<img src="img1/flags.png">
+			<img src="img1/flags.png" alt="a bunch of flags">
 		</div>
 		<br><br>
 		
